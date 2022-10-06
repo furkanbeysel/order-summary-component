@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+/* Reset and Font Family */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+p {
+  font-size: 16px;
+  color: var(--desaturated-blue);
+}
+
+body {
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--pale-blue);
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.container {
+  background-color: white;
+  width: 450px;
+  border-radius: 1rem;
+  margin: 10% auto;
+  overflow: hidden;
+}
+
+.text-container {
+  text-align: center;
+  margin-bottom: 15px;
+  width: 70%;
+  margin: 15px auto;
+}
+
+.text-container h1 {
+  margin-bottom: 15px;
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.plan-container {
+  background-color: var(--very-pale-blue);
+  border-radius: 1rem;
+  width: 70%;
+  height: 100px;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 15px;
+}
+
+.left-plan {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.price {
+  margin-left: 15px;
+}
+
+.right-plan a {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.right-plan a:hover {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.btn {
+  display: block;
+  width: 70%;
+  height: 40px;
+  margin: 15px auto;
+  border-radius: 0.75rem;
+  border: 0;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+}
+
+.payment-btn {
+  background-color: var(--bright-blue);
+  color: white;
+}
+
+.payment-btn:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.cancel-btn {
+  background: transparent;
+  color: rgb(126, 126, 126);
+  margin-bottom: 30px;
+}
+
+.cancel-btn:hover {
+  color: var(--dark-blue);
+  cursor: pointer;
+  font-weight: 900;
+}
+
+/* Attribution  */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: auto;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Mobile Design */
+
+@media (max-width: 525px) {
+  body {
+    background-image: url("images/pattern-background-mobile.svg");
+  }
+}
