@@ -38,6 +38,7 @@ body {
   border-radius: 1rem;
   margin: 10% auto;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .text-container {
@@ -71,6 +72,16 @@ body {
   text-align: left;
 }
 
+h5 {
+  font-size: 16px;
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.right-plan a {
+  color: var(--bright-blue);
+}
+
 .price {
   margin-left: 15px;
 }
@@ -99,6 +110,7 @@ body {
 .payment-btn {
   background-color: var(--bright-blue);
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 25px;
 }
 
 .payment-btn:hover {
